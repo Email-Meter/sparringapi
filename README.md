@@ -17,7 +17,7 @@
 This project uses `pipenv` to handle python deps, so if you don't have it installed into your system
 you can install it with `pip install pipenv`.
 
-    git clone https://github.com/dnmellen/sparringapi.git
+    git clone https://github.com/Email-Meter/sparringapi.git
     cd sparringapi
     pipenv install
 
