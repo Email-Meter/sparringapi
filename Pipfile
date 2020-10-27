@@ -10,7 +10,7 @@ ipdb = "*"
 
 [packages]
 starlette = "*"
-uvicorn = "*"
+uvicorn = {extras = ["standard"]}
 environs = "*"
 ujson = "*"
 

@@ -6,4 +6,4 @@ WORKDIR /app
 RUN pipenv install
 COPY . /app/
 
-CMD ["pipenv", "run", "python", "-m", "app.main", "app/main.py"]
+CMD ["pipenv", "run", "uvicorn", "--host", "0.0.0.0", "--port", "$PORT", "--loop", "uvloop", "app.main:app"]

@@ -1,5 +1,5 @@
+import asyncio
 import random
-import time
 import uvicorn
 from starlette.applications import Starlette
 from starlette.endpoints import HTTPEndpoint
@@ -43,7 +43,7 @@ class SparringView(HTTPEndpoint):
 
     async def get(self, request):
         latency = self.get_latency(request)
-        time.sleep(latency)
+        await asyncio.sleep(latency)
         response = {
             "status": "OK",
         }
